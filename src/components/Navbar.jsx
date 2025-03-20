@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { IKImage } from "imagekitio-react";
+
+import Image from "./Image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -7,12 +8,7 @@ const Navbar = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <IKImage
-          urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT}
-          src="https://ik.imagekit.io/jmfxcgnnq/logo.jpg"
-          className="w-8 h-8"
-          alt=""
-        />
+        <Image src="logo.jpg" alt="Logo" w={32} h={32} />
         <span>Pas-bête</span>
       </div>
       {/* MOBILE MENU*/}
