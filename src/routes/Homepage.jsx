@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import MainCategories from "../components/MainCategories";
+import FeaturedPosts from "../components/FeaturedPosts";
 
 const Homepage = () => {
   return (
@@ -37,7 +39,7 @@ const Homepage = () => {
             />
             <text>
               <textPath href="#circlePath" startOffset="0%">
-                Mon Pense-Bête 
+                Mon Pense-Bête
               </textPath>
               <textPath href="#circlePath" startOffset="50%">
                 Pour Dev ° ° °
@@ -60,7 +62,10 @@ const Homepage = () => {
           </button>
         </Link>
       </div>
+      {/*CATEGORIES */}
+      <MainCategories />
       {/*FEATURED POSTS */}
+      <FeaturedPosts />
       {/*POST LIST */}
     </div>
   );
