@@ -67,6 +67,9 @@ const Homepage = () => {
       {/*FEATURED POSTS */}
       <FeaturedPosts />
       {/*POST LIST */}
+      <div className="">
+        <h1 className="my-b text-2xl text-gray-600">Recent Posts</h1>
+      </div>
     </div>
   );
 };
