@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #e6e6ff;
+  /* background-color: #e6e6ff; */
+  background-color: #e5e5e5;
   width: 100vw;
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
