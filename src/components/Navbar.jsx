@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Image from "./Image";
-import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton, useAuth } from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const { getToken } = useAuth();
+
+  useEffect(() => {
+    getToken().then((token) => console.log(token));
+  }, []);
+
   return (
     <div className="w-full h-16 md:h-20 flex items-center justify-between">
       {/* LOGO */}
@@ -27,22 +34,30 @@ const Navbar = () => {
             open ? "-right-0" : "-right-[100%]"
           }`}
         >
-          <Link to="/">Home</Link>
-          <Link to="/">Trending</Link>
-          <Link to="/">Most Popular</Link>
-          <Link to="/">About</Link>
-          <a href="/">
+          <Link to="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+          <Link to="/posts?sort=trending" onClick={() => setOpen(false)}>
+            Trending
+          </Link>
+          <Link to="/posts?sort=popular" onClick={() => setOpen(false)}>
+            Most Popular
+          </Link>
+          <Link to="/" onClick={() => setOpen(false)}>
+            About
+          </Link>
+          <Link to="/login" onClick={() => setOpen(false)}>
             <button className="py-2 px-4 rounded-3xl bg-fuchsia-950 text-white">
               Login 👾
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       {/* DESKTOP MENU */}
       <div className="hidden md:flex items-center gap-8 xl:gap-12 font-medium">
         <Link to="/">Home</Link>
-        <Link to="/">Trending</Link>
-        <Link to="/">Most Popular</Link>
+        <Link to="/posts?sort=trending">Trending</Link>
+        <Link to="/posts?sort=popular">Most Popular</Link>
         <Link to="/">About</Link>
         <SignedOut>
           <Link to="/login">
