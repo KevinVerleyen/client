@@ -68,7 +68,7 @@ const FeaturedPosts = () => {
           <div className="w-2/3">
             {/* details */}
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
-              <h1 className="font-semibold">02.</h1>
+              <h1 className="font-semibold">03.</h1>
               <Link className="text-blue-800">Web Design</Link>
               <span className="text-gray-500">2 days ago</span>
             </div>
@@ -95,7 +95,7 @@ const FeaturedPosts = () => {
           <div className="w-2/3">
             {/* details */}
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
-              <h1 className="font-semibold">02.</h1>
+              <h1 className="font-semibold">04.</h1>
               <Link className="text-blue-800">Web Design</Link>
               <span className="text-gray-500">2 days ago</span>
             </div>
