@@ -9,7 +9,7 @@ const Comments = () => {
           placeholder="Write a comment..."
           className="w-full p-4 rounded-xl"
         />
-        <button className="bg-blue-800 px-4 py-4 text-white font-medium rounded-xl">
+        <button className="bg-fuchsia-950 px-4 py-4 text-white font-medium rounded-xl">
           Send
         </button>
       </div>

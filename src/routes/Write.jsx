@@ -51,7 +51,7 @@ const Write = () => {
           theme="snow"
           className="flex-1 rounded-xl bg-white shadow-md"
         />
-        <button className="bg-blue-800 text-white font-medium rounded-xl mt-4 p-2 w-36">
+        <button className="bg-fuchsia-950 text-white font-medium rounded-xl mt-4 p-2 w-36">
           Send
         </button>
       </form>
