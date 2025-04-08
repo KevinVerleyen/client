@@ -27,9 +27,9 @@ const FeaturedPosts = () => {
         </Link>
       </div>
       {/* Others */}
-      <div className="w-full lg:w-1/2 flex flex-col gap-4">
+      <div className="w-full  lg:w-1/2 flex flex-col gap-4  ">
         {/* second */}
-        <div className="lg:h-1/3 flex justify-between gap-4">
+        <div className="lg:h-1/3 flex justify-between gap-4 ">
           <div className="w-1/3 aspect-video">
             <Image
               src="featured2.jpeg"
@@ -38,7 +38,7 @@ const FeaturedPosts = () => {
             />
           </div>
           {/* details and title */}
-          <div className="w-2/3">
+          <div className="w-2/3 ">
             {/* details */}
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
               <h1 className="font-semibold">02.</h1>
@@ -48,10 +48,9 @@ const FeaturedPosts = () => {
             {/* title */}
             <Link
               to="/test"
-              className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
+              className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium "
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              exercitationem nam ipsa numquam unde molestiae dolorum earum,
             </Link>
           </div>
         </div>
@@ -78,7 +77,6 @@ const FeaturedPosts = () => {
               className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              exercitationem nam ipsa numquam unde molestiae dolorum earum,
             </Link>
           </div>
         </div>
@@ -105,7 +103,6 @@ const FeaturedPosts = () => {
               className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium"
             >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-              exercitationem nam ipsa numquam unde molestiae dolorum earum,
             </Link>
           </div>
         </div>

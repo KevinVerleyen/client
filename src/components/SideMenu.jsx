@@ -13,7 +13,7 @@ const SideMenu = () => {
             type="radio"
             name="sort"
             value="newest"
-            className="appearance-none w-4 h-4 border-[1.5px] border-blue-800 cursor-pointer rounded-sm bg-white checked:bg-blue-800"
+            className="appearance-none w-4 h-4 border-[1.5px] border-fuchsia-950 cursor-pointer rounded-sm bg-white checked:bg-fuchsia-950"
           />
           Newest
         </label>
@@ -22,7 +22,7 @@ const SideMenu = () => {
             type="radio"
             name="sort"
             value="popular"
-            className="appearance-none w-4 h-4 border-[1.5px] border-blue-800 cursor-pointer rounded-sm bg-white checked:bg-blue-800"
+            className="appearance-none w-4 h-4 border-[1.5px] border-fuchsia-950 cursor-pointer rounded-sm bg-white checked:bg-fuchsia-950"
           />
           Most Popular
         </label>
@@ -31,7 +31,7 @@ const SideMenu = () => {
             type="radio"
             name="sort"
             value="trending"
-            className="appearance-none w-4 h-4 border-[1.5px] border-blue-800 cursor-pointer rounded-sm bg-white checked:bg-blue-800"
+            className="appearance-none w-4 h-4 border-[1.5px] border-fuchsia-950 cursor-pointer rounded-sm bg-white checked:bg-fuchsia-950"
           />
           Trending
         </label>
@@ -40,7 +40,7 @@ const SideMenu = () => {
             type="radio"
             name="sort"
             value="oldest"
-            className="appearance-none w-4 h-4 border-[1.5px] border-blue-800 cursor-pointer rounded-sm bg-white checked:bg-blue-800"
+            className="appearance-none w-4 h-4 border-[1.5px] border-fuchsia-950 cursor-pointer rounded-sm bg-white checked:bg-fuchsia-950"
           />
           Oldest
         </label>
