@@ -4,7 +4,7 @@ import ReactQuill from "react-quill-new";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { data, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 // import Upload from "../components/Upload.jsx";
@@ -130,7 +130,7 @@ const Write = () => {
           {mutation.isPending ? "loading..." : "Send"}
         </button>
         {"Progress:" + progress}
-        {mutation.isError && <span>{mutation.error.message}</span>}
+        {/* {mutation.isError && <span>{mutation.error.message}</span>} */}
       </form>
     </div>
   );
