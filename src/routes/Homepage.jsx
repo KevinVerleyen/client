@@ -32,8 +32,8 @@ const Homepage = () => {
           </h1>{" "}
           {/* Grand titre */}
           <p className="mt-8 text-md md:text-xl">
-            Le développeur, ce héros silencieux qui fait fonctionner
-            l&#39;internet... enfin presque.
+            Le développeur, ce héros silencieux qui fait fonctionner internet...
+            enfin presque.
           </p>{" "}
           {/* Sous-titre ou description */}
         </div>
